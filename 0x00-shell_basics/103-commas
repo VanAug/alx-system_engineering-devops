@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | grep -E '^\.$|^\.\.$|^[A-Za-z0-9]' | sort -d -f | awk '{ORS = NR % 2 ? ", " : "\n"; print}'
+ls -map
